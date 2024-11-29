@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .product-container {
+            display: flex;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 1200px;
+        }
+
+        .image-gallery {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    overflow-y: auto; /* Enables vertical scrolling */
+    border-right: 1px solid #ddd;
+    max-height: 400px; /* Set a fixed height to show a certain number of images */
+}
+
+
+        .image-gallery img {
+            width: 100%;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            border: 1px solid transparent;
+            transition: border-color 0.3s;
+        }
+
+        .image-gallery img:hover {
+            border-color: #bbb;
+        }
+
+        .main-image {
+            width: 80%;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-image img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-details {
+            padding: 20px;
+        }
+
+        .product-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            font-size: 20px;
+            color: #E74C3C;
+            margin-bottom: 10px;
+        }
+
+        .product-price del {
+            color: grey;
+            margin-right: 10px;
+        }
+
+        .product-description {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .discount-badge {
+            position: absolute;
+            background-color: #E74C3C;
+            color: white;
+            padding: 5px 10px;
+            font-size: 12px;
+            border-radius: 50%;
+            top: 10px;
+            left: 10px;
+        }
+
+        .product-content {
+            position: relative;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="product-container">
+        <div class="image-gallery">
+            <img src="assets/img/product-1.jpg" alt="Thumbnail 1" onclick="changeMainImage('assets/img/product-1.jpg')">
+            <img src="assets/img/product-2.jpg" alt="Thumbnail 2" onclick="changeMainImage('assets/img/product-2.jpg')">
+            <img src="assets/img/product-3.jpg" alt="Thumbnail 3" onclick="changeMainImage('assets/img/product-3.jpg')">
+            <img src="assets/img/product-4.jpg" alt="Thumbnail 4" onclick="changeMainImage('assets/img/product-4.jpg')"><img src="assets/img/product-1.jpg" alt="Thumbnail 1" onclick="changeMainImage('assets/img/product-1.jpg')">
+            <img src="assets/img/product-2.jpg" alt="Thumbnail 2" onclick="changeMainImage('assets/img/product-2.jpg')">
+            <img src="assets/img/product-3.jpg" alt="Thumbnail 3" onclick="changeMainImage('assets/img/product-3.jpg')">
+            <img src="assets/img/product-4.jpg" alt="Thumbnail 4" onclick="changeMainImage('assets/img/product-4.jpg')">
+        </div>
+        <div class="product-content">
+            <div class="discount-badge">-10%</div>
+            <div class="main-image">
+                <img id="main-image" src="assets/img/product-1.jpg" alt="Main Image">
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">MẶT NẠ B5X2 REPAIR CONTROL EGF MỚI</h1>
+                <div class="product-price">
+                    <del>20,000₫</del> <span>18,000₫</span>
+                </div>
+                <p class="product-description">
+                    Công thức đột phá, phục hồi hiệu quả. Phục hồi da nhanh chóng với hàm lượng B5 gấp 2 lần.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function changeMainImage(src) {
+            document.getElementById('main-image').src = src;
+        }
+    </script>
+
+</body>
+
+</html>

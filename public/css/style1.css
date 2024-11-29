@@ -1,0 +1,19 @@
+/* CSS cho hình ảnh trong bảng sản phẩm */
+.table img.card-img-top {
+    width: 100px; /* Đặt chiều rộng cố định */
+    height: auto; /* Giữ tỷ lệ khung hình */
+    object-fit: cover; /* Cắt hình ảnh nếu cần */
+}
+
+/* Để đảm bảo các ô hình ảnh có cùng kích thước */
+.table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Nếu bạn muốn các ô có kích thước nhất định */
+.table td img {
+    width: 100px; /* Thay đổi giá trị nếu cần */
+    height: 100px; /* Thay đổi giá trị nếu cần */
+    object-fit: cover; /* Cắt hình ảnh nếu cần */
+}

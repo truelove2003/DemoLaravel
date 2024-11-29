@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../../Image/login1.jpg');
+    background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  form {
+    width: 40%;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #0c0404;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="email"], input[type="password"], input[type="text"]{
+    width: 96%;
+    height: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #100909;
+    border-radius: 5px;
+  }
+  
+  
+  input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  button[type="submit"] {
+    width: 100%;              /* Đặt chiều rộng của nút là 50% chiều rộng của form */
+    height: 50px;            /* Đặt chiều cao của nút là 50px */
+    background-color: #073ddf; /* Đặt màu nền của nút là màu xanh (#073ddf) */
+    color: #fff;             /* Đặt màu chữ trên nút là màu trắng (#fff) */
+    padding: 10px;           /* Đặt phần đệm bên trong nút là 10px */
+    border: none;            /* Loại bỏ đường viền của nút */
+    border-radius: 50px;     /* Làm tròn các góc của nút với bán kính 50px */
+    cursor: pointer;         /* Thay đổi con trỏ chuột thành hình bàn tay khi di chuột qua nút */
+    margin-top: 20px;        /* Thêm khoảng cách phía trên nút để không dính vào các phần tử khác */
+}
+  
+  button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
